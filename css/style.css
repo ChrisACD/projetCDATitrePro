@@ -1,69 +1,282 @@
+:root {
+  --light-color: rgb(235, 239, 240);
+  --black-color: rgb(1, 11, 20);
+  --red-color: rgb(129, 6, 6);
+  --blue-color: rgb(24, 128, 192);
+  --grey-color: rgb(11, 68, 104);
+}
+
 body {
-    font-family: "Lato", sans-serif;
-    text-decoration-line: 28px;
-    font-style: normal;
-    background-color: rgb(212, 226, 230);
-  }
-  
-  /* header*/
-  
+  font-family: "Lato", sans-serif;
+  text-decoration-line: 28px;
+  font-style: normal;
+  background-color: var(--light-color);
+}
+
+h3 {
+
+   margin: 2rem 0;
+
+}
+
+
+
+h4{
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.btn {
+
+    transition: 0.3s all;
+}
+
+/* header*/
+
 .textwidget {
-   margin: 10px auto;
+  margin: 10px auto;
 }
-  
+
 .phone {
-    position: relative;
-    float: right;
-    font-size: 1em;
-    color: rgb(1, 11, 20) !important;
+  position: relative;
+  float: right;
+  font-size: 1em;
+  color: var(--black-color) !important;
 }
-  
+
 .email {
-    font-size: 1em;
-    margin-left: 20px;
-    color: rgb(1, 11, 20) !important;
-    right: 50px;
-    text-decoration: none;
+  font-size: 1em;
+  margin-left: 20px;
+  color: var(--black-color) !important;
+  right: 50px;
+  text-decoration: none;
 }
 
-i { 
-
-    color: rgb(196, 4, 4) !important;
-    margin-right: 10px;
-    height: 20px; 
-    width: 10px;
+i {
+  color: var(--red-color) !important;
+  margin-right: 10px;
+  height: 20px;
+  width: 10px;
 }
-
 
 /* Homepage Hearder */
 
-
-.SearcFilm {
-
-    position: relative;
-    float: right;
-    margin-left: 30em;
-
-}
-.navbarContent {
-
-background-color: rgb(196, 4, 4) !important;
-width: 100%;
-height: 120px;
-
+.homepage {
+  background-color: var(--red-color) !important;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 100px;
 }
 
-#brand {
+.navbar {
+  background-color: var(--red-color) !important;
+}
+
+#cinema {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.form1 {
+  position: relative;
+  float: right;
+  margin: 0 20em;
+  height: 35px;
+  width: 350px;
+}
+
+.login {
+  position: relative;
+  float: right;
+  margin-right: 50px;
+  width: 350px;
+}
+
+.login button {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+.login:hover button {
+  background-color: var(--blue-color);
+  color: var(--light-color);
+}
+
+/* separateur */
+
+section .separateur {
+  margin-top: 200px;
+  text-align: center;
+}
+
+/* 2eme nav bar */
+
+.whiteColor {
+  color: var(--light-color) !important;
+  margin: 0 50px;
+}
+
+.whiteColor:hover {
+  border: 1px solid var(--light-color);
+}
+
+.greyColor {
+  color: var(--grey-color) !important;
+  margin: 0 50px;
+}
+
+.greyColor:hover {
+  border: 1px solid var(--light-color);
+  background-color: var(--red-color);
+  color: white !important ;
+}
+
+/* section 1*/
+
+.section2 {
+  margin-top: 8rem;
+}
+
+.titre {
+  width: 100%;
+  margin: 5.5rem 0 3.5rem 0;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.name {
+  text-shadow: 5px 5px 10px rgb(129, 6, 6);
+
+}
+
+.net {
+
+   background-color: black;
+   color: var(--red-color);
+   text-emphasis-color: var(--red-color);
+   font-weight: bold;
+   margin: 0;
+
+}
+
+.net:hover {
+
+    background-color: var(--red-color);;
+    color: black;
+    text-emphasis-color: var(--red-color);
+    font-weight: bold;
+ 
+ }
+
+
+
+.netflix {
+   background-color: var(--red-color);
+   color: #fff;
+   margin-left: 0;
+
+}
+.netflix:hover {
+    background-color: #fff;
+    color: var(--red-color);
+    
+ 
+ }
+
+.vod {
+
+    background-color: gray;
     color: #fff;
 }
 
 
+.vod:hover {
+
+    background-color: white;
+    color: gray
+}
+
+/* section2 */
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+
+.col1 {
+
+width: calc(90% / 4);
+margin: 10px;  
+
+
+}
 
 
 
+.card {
+
+border: none;
+background-color: var(--light-color);
+margin: 0 2rem;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.section2 {
+
+margin: 3rem;
+
+
+}
+ 
+/* section2 */
+
+.fa-star {
+
+color: rgb(240, 210, 18) !important;
+font-size: 1.5rem;
+
+}
 
 
 
+.fa-star:nth-child(4) {
+
+    color: grey!important;
+    
+    }
+
+    .fa-star:nth-child(5) {
+
+        color: grey!important;
+        
+        
+        }
+
+/* section3 */
+
+
+
+.imgNet {
+
+   width: 80px;
+   height: 80px;
+
+}
 
 
 

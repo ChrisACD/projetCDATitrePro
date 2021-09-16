@@ -52,6 +52,8 @@
       href="https://fonts.googleapis.com/css2?family=Scheherazade&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100&family=Scheherazade:wght@400;700&display=swap"
       rel="stylesheet"
@@ -64,7 +66,10 @@
     <script src="script/script.js"></script>
 
   </head>
+
+
   <body data-spy="croll"   data-target=".navar" data-offset="60"> 
+  
       <div class="container col-sm-6">
           <div class="textwidget" id="widget">
               <p>
@@ -84,35 +89,36 @@
       </div>
 
 
+<!-- section homepage navbar-->
+     
 
-      <section id="homepage" >
+<section class="homepage" >
         
-        <div class="container-fluid navbarContent"  >
+        
 
-        <nav class="navbar navbar-expand-lg navbar-light " id="mainNav">
-            
-              <a class="navbar-brand" id="brand" href="#">Chris's Cinema</a>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="container-fluid">
+              <a class="navbar-brand" id="cinema" href="#">Chris's Cinema</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 
-                <form class="d-flex SearcFilm">
+                <form class="d-flex form1">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-              </div>
+              <div class="d-flex login">
+                <button class="btn btn-outline-success " type="submit"> <i class="fa fa-users" aria-hidden="true"></i>MON COMPTE</button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              </div>
                 
-                <form class="d-flex">
-                  <button class="btn btn-outline-success" type="submit">MON COMPTE</button>
-                </form>
+
               </div>
+            </div>
 
-
-            
           </nav>
+
 
 
         <div class="navbar navbar-expand-lg navbar-light" role="navigation" id="secondNav">
@@ -121,44 +127,40 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">CINEMA</a>
+                <ul class="navbar-nav list2">
+                  <li class="nav-item ">
+                    <a class="nav-link active whiteColor" aria-current="page" href="#">CINEMA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">SERIES</a>
+                    <a class="nav-link whiteColor" href="#">SERIES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">STREAMING</a>
+                    <a class="nav-link whiteColor" href="#">STREAMING</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="#">NEWS</a>
+                    <a class="nav-link whiteColor " href="#">NEWS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">TRAILERS</a>
+                    <a class="nav-link whiteColor" href="#">TRAILERS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">DVD</a>
+                    <a class="nav-link whiteColor" href="#">DVD</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">VOD</a>
+                    <a class="nav-link whiteColor" href="#">VOD</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">KIDS</a>
+                    <a class="nav-link whiteColor" href="#">KIDS</a>
                   </li>
                 </ul>
               </div>
 
         </div>
 
+        
 
-
-
-
-
-
-        <div class="navbar navbar-expand-lg navbar-light" role="navigation" id="thirdNav">
-            
+        <div class="navbar1 navbar-expand-lg navbar-light" role="" id="thirdNav">
+          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -168,25 +170,25 @@
                 <a class="nav-link active" aria-current="page" href="#"> <i class="fa fa-home" aria-hidden="true"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sénaces</a>
+                <a class="nav-link greyColor" href="#">Sénaces</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Bandes-annonces</a>
+                <a class="nav-link greyColor" href="#">Bandes-annonces</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Casting</a>
+                <a class="nav-link greyColor " href="#">Casting</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Critiques spectateurs</a>
+                <a class="nav-link greyColor" href="#">Critiques spectateurs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Critiques presse</a>
+                <a class="nav-link greyColor" href="#">Critiques presse</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Photo</a>
+                <a class="nav-link greyColor" href="#">Photo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">VOD</a>
+                <a class="nav-link greyColor" href="#">VOD</a>
               </li>
             </ul>
           </div>
@@ -194,25 +196,386 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-    </div>
       </section>
 
 
+      
+<!-- section homepage navbar-->
 
 
 
 
+<!-- section 1 film -->
+
+
+
+<section class="container-fluid section2"> 
+
+  <div class="titre"> 
+    
+    <h1 class="name">The amazing spider-man</h1> 
+  
+  </div>
+
+  <div class="row">
+      <div class="col">
+          <div class="card">
+  
+           <div class="card-hearder">
+  
+            <img src="images/77737-the-amazing-spiderman-en-avant-premiere-au-grand-rex-avec-l-equipe-du-film.jpg" class="card-img-top" alt="...">
+  
+           </div>
+  
+           <div class="card-body">
+              
+  
+           </div>
+  
+           <div class="card-footer">
+               <buttom class="btn btn-primary net">N</buttom>
+               <button class="btn btn-primary netflix">VOIR SUR NETFLIX</button>
+               <buttom class="btn btn-primary vod">VOD</buttom>
+
+  
+           </div>
+  
+          </div>
+      
+      </div>
+  
+  
+    
+      <div class="col">
+          <div class="card">
+  
+           <div class="card-hearder">
+  
+           </div>
+  
+           <div class="card-body">
+            <p>4 juillet 2012 en salle / 2h 17min / Action, Fantastique, Aventure  </p>
+             <p> De Marc Web </p>
+             <p> Par James Vanderbilt, Alvin Sargent </p>
+             <p>Avec Andrew Garfield, Emma Stone, Rhys Ifans </p> 
+           
+           
+
+           </div>
+  
+          </div>
+      
+      </div>
+      <div class="col">
+          <div class="card">
+  
+           <div class="card-hearder">
+  
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jhpax7lcLYs?start=10" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+           </div>
+  
+           <div class="card-body">
+            <h4> SPIDER-MAN CRANE SWINGING SCENE </h4>
+              
+           </div>
+  
+  
+          </div>
+      
+      </div>
+  
+      
+  </div>
+  
+  </section>
+
+
+
+  <!-- section 1 film -->
+
+
+
+
+
+
+
+
+<!-- section2 info -->
+
+<section class="container section2"> 
+
+  <div class="row">
+      
+    
+      <div class="col">
+          <div class="card">
+               <h5>PRESSE</h5>
+              
+           <div class="card-hearder">
+  
+
+  
+           </div>
+  
+           <div class="card-body">
+              
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+  
+           </div>
+  
+           <div class="card-footer">
+
+            <p>25 critiques</p>
+  
+           </div>
+  
+          </div>
+      
+      </div>
+      <div class="col">
+          <div class="card">
+           
+  
+           <div class="card-hearder">
+            <h5>SPECTATEURS</h5>
+  
+           </div>
+  
+           <div class="card-body">
+              
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+  
+           </div>
+  
+           <div class="card-footer">
+  
+            <p>33675 notes dont 2750 critiques</p>
+  
+           </div>
+  
+          </div>
+      
+      </div>
+      <div class="col">
+          <div class="card">
+  
+           <div class="card-hearder">
+            <h5>MES AMIS</h5>
+  
+           </div>
+  
+           <div class="card-body">
+              
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+  
+           </div>
+  
+           <div class="card-footer">
+  
+            <p>27 notes dont 2critiques</p>
+  
+           </div>
+  
+          </div>
+      
+      </div>
+      
+      
+  </div>
+  
+  </section>
+ 
+
+<!-- section2 info -->
+
+
+<!-- section3 -->
+
+<div class="container">
+
+<div class="row">
+
+  <h3>SYNOPSIS</h3>
+
+    <p>
+      Abandonné par ses parents lorsqu’il était enfant, 
+      Peter Parker a été élevé par son oncle Ben et sa tante May. 
+      Il est aujourd’hui au lycée, mais il a du mal à s’intégrer. 
+      Comme la plupart des adolescents de son âge, Peter essaie de comprendre qui il est et d’accepter son parcours. Amoureux pour la première fois,
+       lui et Gwen Stacy découvrent les sentiments, l’engagement et les secrets.
+        En retrouvant une mystérieuse mallette ayant appartenu à son père, Peter entame une quête pour élucider la disparition de ses parents,
+         ce qui le conduit rapidement à Oscorp et au laboratoire du docteur Curt Connors, l’ancien associé de son père.
+          Spider-Man va bientôt se retrouver face au Lézard, l’alter ego de Connors.
+           En décidant d’utiliser ses pouvoirs, il va choisir son destin…
+
+    </p>
+
+
+
+</div>
+
+
+
+
+<div class="row">
+
+  <h3>REGARDER CE FILM</h3>
+
+  <h5>EN SVOD/STREAMING </h5>
+ <img src="/images/netflix_macos_bigsur_icon_189917.png" alt="netflix" class="imgNet">
+ <h6>NETFLIX</h6>
+ <p>Abonnement</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<!-- section3 -->
+
+
+
+
+
+<!-- section4 -->
+
+
+
+
+
+<section class="container-fluid"> 
+
+  <div class="row">
+      <div class="col1">
+          <div class="card">
+  
+           <div class="card-hearder">
+  
+               <img src="/images/andrew.jpg" alt="image1">
+  
+           </div>
+  
+           <div class="card-body">
+               <h3>Andrew Garfield</h3>
+               <p>
+                Rôle : Peter Parker /  
+                Spider-Man </p>
+  
+           </div>
+  
+  
+          </div>
+      
+      </div>
+  
+  
+    
+      <div class="col1">
+          <div class="card">
+  
+           <div class="card-hearder">
+  
+               <img src="/images/emmaStone.jpg" alt="image1">
+  
+           </div>
+  
+           <div class="card-body">
+            <h3>Emma Stone</h3>
+            <p>
+              
+Rôle : Gwen Stacy
+            </p>
+
+        </div>
+  
+          
+  
+          </div>
+      
+      </div>
+      <div class="col1">
+          <div class="card">
+  
+           <div class="card-hearder">
+  
+               <img src="/images/rhys.jpg" alt="image1">
+  
+           </div>
+  
+           <div class="card-body">
+            <h3>Rhys Ifans</h3>
+            <p>
+              
+              Rôle : Dr. Curt Connors/Le Lézard</p>
+
+        </div>
+  
+  
+          </div>
+      
+      </div>
+      <div class="col1">
+          <div class="card">
+  
+           <div class="card-hearder">
+  
+               <img src="images/lenis.jpg" alt="image1">
+  
+           </div>
+  
+           <div class="card-body">
+            <h3>Denis Leary</h3>
+            <p>
+              
+              Rôle : Capitaine George Stacy</p>
+
+        </div>
+  
+           
+  
+          </div>
+      
+      </div>
+      
+      
+  </div>
+  
+  </section>
+
+
+
+
+
+<!-- section4 -->
+
+
+<!-- footer -->
+
+
+
+
+<!-- footer -->
 
 
 
